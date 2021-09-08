@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mafaa.kanoofood">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.LOCALHOST" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logokano"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kanoofood"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".admin_ui.store.FoodPage"></activity>
+        <activity android:name=".admin_ui.form.AddStore" />
+        <activity android:name=".admin_ui.payment.DetailPayment" />
+        <activity android:name=".admin_ui.form.EditUser" />
+        <activity android:name=".admin_ui.form.AddUser" />
+        <activity android:name=".admin_ui.form.EditFood" />
+        <activity android:name=".admin_ui.form.AddFood" />
+        <activity android:name=".admin_ui.form.EditStore" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/Theme.Kanoofood.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".CustActivity"
+            android:theme="@style/Theme.Kanoofood.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".customer_ui.ShowDetailActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Kanoofood.NoActionBar" />
+    </application>
+
+</manifest>
